@@ -4,10 +4,12 @@ export class Util {
      static gerarNomeAleatorio(): string {
         const randomNome = faker.person.firstName();
         return randomNome;
-
     }
-}
 
+    static gerarNumeroDePedido(): string {
+
+        return"" + faker.number.int(1000, ).toString();}        
+}
 const nomeGerado = Util.gerarNomeAleatorio();
 console.log(nomeGerado);
 
